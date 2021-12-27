@@ -150,7 +150,7 @@ internal class DirectCachedCapture : DirectImageCapture
             }
 
             if (IsAcceptingFrames)
-                BlockingCollection.Add(frame);
+                FrameConsumer.Add(frame);
 
             #endregion
 
@@ -361,7 +361,7 @@ internal class DirectCachedCapture : DirectImageCapture
             }
 
             if (IsAcceptingFrames)
-                BlockingCollection.Add(frame);
+                FrameConsumer.Add(frame);
 
             #endregion
 
@@ -487,7 +487,7 @@ internal class DirectCachedCapture : DirectImageCapture
                 Marshal.Copy(new IntPtr(stream.DataPointer.ToInt64() + height * data.RowPitch), frame.Data, height * Width * 4, Width * 4);
             }
 
-            BlockingCollection.Add(frame);
+            FrameConsumer.Add(frame);
 
             #endregion
 
@@ -619,7 +619,7 @@ internal class DirectCachedCapture : DirectImageCapture
                 Marshal.Copy(new IntPtr(stream.DataPointer.ToInt64() + height * data.RowPitch), frame.Data, height * Width * 4, Width * 4);
             }
 
-            BlockingCollection.Add(frame);
+            FrameConsumer.Add(frame);
 
             #endregion
 
@@ -732,7 +732,7 @@ internal class DirectCachedCapture : DirectImageCapture
                 Marshal.Copy(new IntPtr(stream.DataPointer.ToInt64() + height * data.RowPitch), frame.Data, height * Width * 4, Width * 4);
             }
 
-            BlockingCollection.Add(frame);
+            FrameConsumer.Add(frame);
 
             #endregion
 
