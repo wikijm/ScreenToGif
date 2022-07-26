@@ -913,7 +913,7 @@ Si vous utilisez le MediaPlayer, vérifiez si la fonction Windows appelée 'Fonc
     <s:String x:Key="S.Encoder.ExploreFolder">Explorer le dossier</s:String>
     <s:String x:Key="S.Encoder.Remove">Supprimer de la liste</s:String>
     <s:String x:Key="S.Encoder.Details">Afficher les détails</s:String>
-    <s:String x:Key="S.Encoder.Dismiss">Rejeter tous les encodages terminés</s:String>
+    <s:String x:Key="S.Encoder.Dismiss">Effacer tous les encodages terminés</s:String>
 
     <s:String x:Key="S.Encoder.Copy.Image">Copier comme image</s:String>
     <s:String x:Key="S.Encoder.Copy.Filename">Copier le nom de fichier</s:String>
